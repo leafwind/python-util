@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+
 def highlight(string, color):
-    ''' return color string for printing to terminal. '''
+    ''' return colorized string for printing to terminal. '''
     color_mapping = {
         'red': '31',
         'green': '32',
