@@ -1,7 +1,7 @@
 from nose.tools import assert_equal
 import datetime
 
-from python-utils.time_utils import ts2datetime, datetime2ts, ts2datestr, datestr2ts, datestr_add_days
+from python_utils.time_utils import ts2datetime, datetime2ts, ts2datestr, datestr2ts, datestr_add_days
 
 
 class TestUtil(object):
