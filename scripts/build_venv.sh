@@ -8,15 +8,11 @@ else
     if /usr/bin/virtualenv __ --no-site-packages --python=python2.7; then
         echo "use /usr/bin/virtualenv"
     else
-        if /opt/anaconda/bin/virtualenv __ --no-site-packages --python=python2.7; then
-            echo "use /opt/anaconda/bin/virtualenv"
-        else
-            echo "all failed, exit"
-            exit 1
-        fi
+        echo "all failed, exit"
+        exit 1
     fi
 fi
-source __/bin/activate
+. __/bin/activate
 pip install --upgrade pip
 pip install -r $2
-source deactivate
+deactivate
