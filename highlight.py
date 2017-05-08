@@ -13,4 +13,4 @@ def highlight(string, color):
         return string
     else:
         attr = color_mapping[color]
-        return '\x1b[{}m{}\x1b[0m'.format(attr string)
+        return '\x1b[{}m{}\x1b[0m'.format(attr, string)

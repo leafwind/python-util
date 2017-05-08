@@ -10,9 +10,9 @@ nosetests tests
 echo "# -------------------"
 echo "# pyflakes"
 echo "# -------------------"
-pyflakes app/ scripts/
+pyflakes highlight.py time_utils.py utils.py
 
 echo "# -------------------"
 echo "# pylint"
 echo "# -------------------"
-pylint -d all -e W0611,W0612,W0613,W0614 --reports=n --msg-template='{msg_id} {path}:{line} {msg} ({symbol})' app/ scripts/
+pylint -d all -e W0611,W0612,W0613,W0614 --reports=n --msg-template='{msg_id} {path}:{line} {msg} ({symbol})' highlight.py time_utils.py utils.py
