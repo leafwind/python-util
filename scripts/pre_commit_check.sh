@@ -20,4 +20,4 @@ pylint -d all -e W0611,W0612,W0613,W0614 --reports=n --msg-template='{msg_id} {p
 echo "# -------------------"
 echo "# vulture"
 echo "# -------------------"
-vulture time_utils.py utils.py highlight.py
+vulture highlight.py time_utils.py utils.py
